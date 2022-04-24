@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/compass"
+        android:layout_above="@id/textadress"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/compass1" />
+
+    <TextView
+        android:id="@+id/spinnertitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Background" />
+
+    <TextView
+        android:id="@+id/spinner2title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="style" />
+
+    <Spinner
+        android:id="@+id/stylemenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner2title" />
+
+    <Spinner
+        android:id="@+id/Bgmenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnertitle"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/yellow"
+        android:text="Get location" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/gray"
+        android:text="Show on map" />
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/textalttitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textlongitude"
+        android:layout_centerInParent="true"
+        android:padding="8dp"
+        android:text="lattitude" />
+
+    <TextView
+        android:visibility="invisible"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/textlongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button"
+        android:padding="8dp"
+        android:layout_centerInParent="true"
+        android:text="longitude" />
+
+    <TextView
+        android:visibility="invisible"
+        android:layout_marginTop="16dp"
+        android:id="@+id/textadress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textalttitude"
+        android:layout_centerHorizontal="true"
+        android:padding="8dp"
+        android:text="adres" />
+
+</RelativeLayout>

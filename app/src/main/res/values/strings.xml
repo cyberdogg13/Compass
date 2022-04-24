@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">compass</string>
+
+    <string-array name="compasses">
+        <item>classic</item>
+        <item>modern</item>
+        <item>funky</item>
+    </string-array>
+
+    <string-array name="backgrounds">
+        <item>white</item>
+        <item>black</item>
+        <item>wood</item>
+    </string-array>
+
+</resources>
